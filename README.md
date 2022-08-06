@@ -20,7 +20,7 @@ most people do, you'll need to follow the
 # Instructions
 
 1. Clone this repository.
-2. Download and unzip the [Neighborhood](https://github.com/Microsoft/AirSim/releases/download/v1.1.7/Neighbourhood.zip)
+2. Download and unzip the [AirSimNH](https://github.com/microsoft/AirSim/releases/download/v1.7.0-windows/AirSimNH.zip)
 example, open it, and click <b>run.bat</b> to launch AirSim.  
 3. When prompted, go with the default car simulation. If you press the <b>3</b> key on your keyboard,
 you will see the little image on which the neural net will be trained.
