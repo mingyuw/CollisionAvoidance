@@ -1,5 +1,7 @@
 <a href="https://www.youtube.com/watch?v=9bEPKMctNpI"><img src="airsim.png"></a>
 
+Reference: https://github.com/simondlevy/AirSimTensorFlow/branches
+
 This repository contains Python scripts showing how you can use [Microsoft AirSim](https://github.com/Microsoft/AirSim) to collect image data
 from a moving vehicle, then use that data to train and test a deep-learning neural net in TensorFlow.  
 
@@ -31,6 +33,7 @@ the network in the next step.
 NVIDIA GeForce GTX 1080 Ti GPU, we were able to complete the 500 training iterations in a few seconds.
 6. From the repository, run the <b>collision_testing.py</b> script.  This should drive the car forward as before, but 
 but the car should stop right before it hits the fence, based on the collision predicted by the neural net.
+7. Run <b>CollisionAvoidance.py</b> script to generate a second car backing off from a parking space, and more functions to come...
 
 # How it works
 
@@ -48,29 +51,3 @@ Finally, the <b>collision_testing</b> script moves the vehicle forward, converti
 image into grayscale and running it through the network to make a collision/no-collision prediction.
 When the value of the &ldquo;collision bit&rdquo; exceeds 0.5, the script stops the vehicle by applying the brakes.
 
-# Future work
-
-Our single-layer logistic regression network provides a simple proof-of-concept
-example; however, for a more realistic data set involving collisions with
-different types of objects, a convolutional network would make more sense.
-AirSim also provides access to depth images (just press the <b>1</b> key during
-the simulation) which, like the Lidar on today's self-driving cars, would
-provide a valuable additional source of information for avoiding collisions.
-
-# Credits
-
-This code represents the combined work of two teams in Prof. Simon D. Levy's fall 2017 AI course 
-([CSCI 315](http://home.wlu.edu/~levys/courses/csci315f2017/)) at 
-Washington and Lee University (listed alphabetically):
-
-* Jack Baird 
-* Alex Cantrell 
-* Keith Denning 
-* Rajwol Joshi
-* Will McMurtry 
-* Jacob Rosen
-
-# Acknowledgement
-
-We thank David Pfaff of the [W&L IQ Center](https://www.wlu.edu/iq-center) for
-providing the hardware on which we developed this project.
