@@ -1,5 +1,7 @@
 <a href="https://www.youtube.com/watch?v=9bEPKMctNpI"><img src="airsim.png"></a>
 
+Reference: https://github.com/simondlevy/AirSimTensorFlow
+
 This repository contains Python scripts showing how you can use [Microsoft AirSim](https://github.com/Microsoft/AirSim) to collect image data
 from a moving vehicle, then use that data to train and test a deep-learning neural net in TensorFlow. This repository also contains Python scripts 
 to simulate the collision of two cars 
@@ -32,6 +34,7 @@ the network in the next step.
 5. From the repository, run the <b>collision_training.py</b> script.
 6. From the repository, run the <b>collision_testing.py</b> script.  This should drive the car forward as before, but 
 but the car should stop right before it hits the fence, based on the collision predicted by the neural net.
+7. Run <b>CollisionAvoidance.py</b> script to generate a second car backing off from a parking space, and more functions to come...
 
 
 ### CollisonAvoidance
